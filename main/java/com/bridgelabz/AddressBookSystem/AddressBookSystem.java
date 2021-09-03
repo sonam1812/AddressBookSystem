@@ -1,6 +1,7 @@
 package com.bridgelabz.AddressBookSystem;
 
 public class AddressBookSystem {
+	
 	 String firstName;
 	 String lastName;
 	 String address;
@@ -9,9 +10,10 @@ public class AddressBookSystem {
 	 int zip;
 	 long phoneNo;
 	 String email;
+	 
 	 public static void main(String[] args) {
-	 }	
-
+			
+		}
 	public  AddressBookSystem (String firstName, String lastName, String address, String city, String state, int zip,
 			long phoneNo, String email) {
 		
@@ -26,10 +28,6 @@ public class AddressBookSystem {
 		this.email = email;
 	}
 
-	public String toString() {
-		return "PersonDetails (firstName=" + firstName + ", lastName=" + lastName + ", address=" + address + ", city="
-				+ city + ", state=" + state + ", zip=" + zip + ", phoneNo=" + phoneNo + ", email=" + email + ")";
-	}
 
 	public String getFirstName() {
 		return firstName;
@@ -94,7 +92,13 @@ public class AddressBookSystem {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	//override
+	public String toString() {
+	return "AddressBookSystem (firstName=" + firstName + ", lastName=" + lastName + ", address=" + address + ", city="
+					+ city + ", state=" + state + ", zip=" + zip + ", phoneNo=" + phoneNo + ", email=" + email + ")";
+		}
 
 	 }
+
 
 
